@@ -36,3 +36,13 @@ export const convertDTToHour = (timestamp: number) => {
 
   return dayOfWeek + " " + formattedTime;
 };
+
+const baiTap = () => {
+  let x = 1;
+  while (x > 0) {
+    if (7 / x - x / 4 - 10 / x < 0) {
+      return x;
+    }
+    x++;
+  }
+};
